@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/head"/>
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:orientation="vertical" >
+            
+       <Gallery
+	        android:id="@+id/sp_pics"
+	        android:layout_width="match_parent"
+	        android:layout_height="140dip" 
+	        android:gravity="center_vertical"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginBottom="10dip"
+	        android:spacing="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/filter_spider_line" />
+        
+        <TextView
+            android:id="@+id/sp_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/black"
+            android:layout_margin="20dip"
+            android:textSize="18sp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sp_desc"
+            android:layout_below="@+id/sp_desc"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="价格：" />
+
+        
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_price"
+            android:layout_marginTop="20dip"
+            android:src="@drawable/filter_spider_line" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="10dip"
+        android:text="商品打分" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleIndicator" 
+        android:layout_marginLeft="18dip"
+        android:layout_marginTop="20dip"/>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

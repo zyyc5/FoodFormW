@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.szzydx.spsy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="9" />
+
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+  	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+  	<uses-permission android:name="android.permission.INTERNET"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/no_title" >
+        <activity
+            android:name="edu.szzydx.spsy.TabIndex"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.szzydx.spsy.IndexActivity"
+            android:windowSoftInputMode = "adjustUnspecified"></activity>
+        <activity 
+            android:name=".CaptureActivity"
+            android:screenOrientation="portrait"   
+			android:configChanges="orientation|keyboardHidden"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:windowSoftInputMode="stateAlwaysHidden"></activity>   
+		<activity android:name="edu.szzydx.spsy.ScanResult"></activity> 
+		<activity android:name="edu.szzydx.spsy.UserLogin"></activity>
+		<activity android:name="edu.szzydx.spsy.Register"></activity>
+		<activity android:name="edu.szzydx.spsy.KuaiDiActivity"></activity>
+		<activity android:name="edu.szzydx.spsy.Scan_input"></activity>
+		<activity android:name="edu.szzydx.spsy.BaoGuangLan"></activity>
+		<activity android:name="edu.szzydx.spsy.BaoGuangLan_info"></activity>
+		<activity android:name="edu.szzydx.spsy.History_activity"></activity>
+		<activity android:name="edu.szzydx.spsy.MoreActivity"></activity>
+		<activity android:name="edu.szzydx.spsy.ZhiXiaoDianActivity"></activity>
+		<activity android:name="edu.szzydx.spsy.ZXD_SP_list_Activtiy"></activity>
+		<activity android:name="edu.szzydx.spsy.RMCXActivity"></activity>
+		<activity android:name="edu.szzydx.spsy.Sp_info_Activity"></activity>
+		<activity android:name="edu.szzydx.spsy.AboutActivity"></activity>
+		<activity android:name="edu.szzydx.spsy.SafeFood"></activity>
+		<activity android:name="edu.szzydx.spsy.SafeFood_info_Activity"></activity>
+		<activity 
+		    android:name="edu.szzydx.spsy.SearchDialog"
+		    ></activity>
+		<activity android:name="edu.szzydx.spsy.ZiXunActivity"></activity>
+		<activity android:name="edu.szzydx.spsy.NongJiaLeActivity"></activity>
+		<activity android:name="edu.szzydx.spsy.FenLeiSearch"></activity>
+		<activity android:name="edu.szzydx.spsy.FLSearch_SP_List"></activity>
+    </application>
+
+</manifest>

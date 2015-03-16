@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+    
+<LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@color/headcolor"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_weight="0.89"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="请输入问题" >
+                     <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/bt_s"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:background="@color/headcolor"
+                    android:text="问"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+
+</LinearLayout>

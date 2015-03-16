@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/head"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:lines="1"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/tb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_hor_right_sel"
+                android:tag="tab1"
+                android:text="食品" />
+
+            <Button
+                android:id="@+id/tb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_hor_right_nor"
+                android:tag="tab2"
+                android:text="饮料" />
+
+            
+
+        </TableRow>
+
+    </TableLayout>
+	<FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	        
+	    <ListView
+	        android:id="@+id/lv_1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:cacheColorHint="@color/transparent"
+	        android:divider="@color/transparent"
+	       	android:background="@color/white">
+	    </ListView>
+	    <ListView
+	        android:id="@+id/lv_2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:cacheColorHint="@color/transparent"
+	        android:divider="@color/transparent"
+	       	android:background="@color/white">
+	    </ListView>
+	    <ListView
+	        android:id="@+id/lv_3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:cacheColorHint="@color/transparent"
+	        android:divider="@color/transparent"
+	       	android:background="@color/white">
+	    </ListView>
+	</FrameLayout>
+</LinearLayout>

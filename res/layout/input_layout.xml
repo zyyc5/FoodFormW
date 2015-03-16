@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+    
+<include layout="@layout/head"/>
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dip"
+    android:textSize="16sp"
+    android:textColor="@color/black2"
+    android:text="请选择条码类型" />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:padding="5dip">
+
+    <Button
+        android:id="@+id/bt_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+		android:background="@drawable/scan_type_bt_sel"
+		android:textColor="@color/black2"
+		android:textSize="16sp"
+        android:text="商品" />
+
+    <Button
+        android:id="@+id/bt_kd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+		android:background="@drawable/scan_type_bt_nor"
+		android:textColor="@color/black2"
+		android:textSize="16sp"
+        android:text="快递" />
+
+</RelativeLayout>
+<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_margin="10dip"
+    	android:textSize="16sp"
+    	android:textColor="@color/black2"
+        android:text="请输入条码" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dip"
+    android:background="@drawable/upomp_bypay_input_bg"
+    android:layout_margin="5dip" >
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bt_ok"
+        android:background="@color/transparent"
+        android:layout_marginLeft="5dip"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/scan_type_bt_nor"
+        android:text="确定"
+        android:textColor="@color/black2"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_margin="10dip">
+
+    <Button
+        android:id="@+id/bt_trans_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/scan_bt_cancel_nor"
+         />
+
+    <Button
+        android:id="@+id/bt_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/scan_bt_trans_nor"
+         />
+
+</RelativeLayout>
+    
+</LinearLayout>

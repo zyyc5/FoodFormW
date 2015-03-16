@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/head"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:lines="1"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/bt_his_sm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_hor_right_sel"
+                android:text="扫描" />
+
+            <Button
+                android:id="@+id/bt_his_ss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_hor_right_nor"
+                android:layout_marginLeft="1px"
+                android:layout_marginRight="1px"
+                android:text="搜索" />
+
+            <Button
+                android:id="@+id/bt_his_kd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_hor_right_nor"
+                android:text="快递" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/lv_his"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:cacheColorHint="@color/transparent"
+       	android:background="@color/white">
+    </ListView>
+
+</LinearLayout>
